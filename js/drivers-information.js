@@ -16,6 +16,6 @@ fetch(myRequest)
                 +'<td>'+data.MRData.DriverTable.Drivers[i].nationality+'</td>'
                 +'<td>'+data.MRData.DriverTable.Drivers[i].dateOfBirth+'</td>'
                 +'<td> <a class="link-table-drivers" href="'+data.MRData.DriverTable.Drivers[i].url+'"> Information </a></td>';
-      myTable.insertAdjacentHTML("beforeend",tablerow)
+      myTable.insertAdjacentHTML("beforeend",tablerow);
     }
   })
