@@ -53,13 +53,11 @@ var slideIndex = 0;
 var timer;
 var slides = document.getElementsByClassName("mySlides");
 var dots = document.getElementsByClassName("dot");
+var container = document.querySelector("#div-slideshow");
 
-nextSlide();
+
 
 function showSlide(n) { 
-
-  console.log(slides.length);
-
   if (n > slides.length) { slideIndex = 1 }
   if (n < 1) { slideIndex = slides.length }
 
@@ -75,16 +73,23 @@ function showSlide(n) {
 
 function nextSlide() {
   slideIndex ++;
-  showSlide(slideIndex)
-  timer = setTimeout(nextSlide,1000);
+  showSlide(slideIndex);
+  timer = setTimeout(nextSlide,2000);
 }
 
 function currentSlide(n){
-  showSlide(n);
+  slideIndex = n;
+  window.clearTimeout(timer);
+  showSlide(slideIndex);
+  timer = setTimeout(nextSlide,3000);
+}
+
+function unpause(){
+  window.clearTimeout(timer);  
+  timer = setTimeout(nextSlide,1000);
 }
 
 function pause(){
   window.clearTimeout(timer);
 }
-
 /*==========================================================================*/

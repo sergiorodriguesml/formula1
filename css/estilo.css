@@ -12,7 +12,7 @@ nav{
 }
 
 
-.link-table-drivers,#link-drivers{
+.link-table-drivers,.link-navbar{
     text-decoration: none;
     color: black;
 }
@@ -216,36 +216,36 @@ li.dropdown:hover .dropbtn{
     .prev, .next,.text {font-size: 11px}
   }
 /*===============================================================*/
-/* table de pilotos============================================== */
+/* table das requisições============================================== */
 
-#table-drivers{
+.table-reqs {
     width: 100%;
     border-collapse: collapse;
+   /*  border-right: 1px solid lightgray;
+    border-left: 1px solid lightgray; */
 }
 
-#table-drivers th,td{
+.table-reqs th,td{
     padding: 8px;
     text-align: center;
     border-bottom: 1px solid lightgray;
 
+    
 }
 
-#table-drivers tr:hover{
+.table-reqs tr:hover{
     background-color: #E5E5E2;
 }
 
-#table-drivers th{
+.table-reqs th{
     background-color: #E5E5E2;
 }
 
-
-
-
-
-
-
-
-
+/* Ajusta a font da exibição do ano de Season */
+#ano-seasion{
+    font-weight: bold;
+    font-size: 30px;
+}
 
 
 
