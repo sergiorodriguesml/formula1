@@ -48,6 +48,17 @@ nav{
     z-index:1;
 }
 
+#img2017{
+    width: 85px;
+    height: 60px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    margin-top: 40px;
+    margin-left: 13px;
+
+}
+
 #ferrarilogo{
     height: 20px;
     width: 15px;
@@ -246,9 +257,6 @@ li.dropdown:hover .dropbtn{
     font-weight: bold;
     font-size: 30px;
 }
-
-
-
 
 
 /* Geral=========================================================*/
